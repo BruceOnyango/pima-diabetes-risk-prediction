@@ -1,0 +1,122 @@
+=== SUMMARY STATS ===
+       Outcome   n Mean_Glucose
+1 Non.Diabetic 500       110.68
+2     Diabetic 268       142.13
+  Mean_BMI Mean_Age Mean_Insulin
+1    30.93    31.19       124.15
+2    34.94    37.07       152.28
+  Mean_BP Mean_Preg Mean_DPF
+1   70.85      3.30    0.420
+2   74.60      4.87    0.527
+
+=== CORRELATIONS ===
+             Outcome_num 
+                  1.0000 
+       Glucose_BMI_Score 
+                  0.5246 
+                 Glucose 
+                  0.4928 
+            BMI_Category 
+                  0.3105 
+                     BMI 
+                  0.3085 
+                 Insulin 
+                  0.2387 
+                     Age 
+                  0.2384 
+             Pregnancies 
+                  0.2219 
+           SkinThickness 
+                  0.2149 
+DiabetesPedigreeFunction 
+                  0.1836 
+           BloodPressure 
+                  0.1713 
+         Young_High_Preg 
+                 -0.0490 
+
+=== MARGINAL PROBS ===
+P(Diabetic)= 0.349 
+P(Non-Diabetic)= 0.651 
+
+=== CONDITIONAL PROBS ===
+P(D|High Glucose)= 0.6853 
+P(D|Normal Glucose)= 0.2329 
+Risk multiplier= 2.94 x
+P_joint= 0.1523 
+
+=== BAYES ===
+P(D|Obese)= 0.4576 
+
+=== HYPOTHESIS TESTS ===
+T1: t= 14.853 p= 1.771074e-41 
+T1: Mean_Diab= 142.13 Mean_NonDiab= 110.68 
+T2: t= 9.238 p= 4.439943e-19 
+T2: Mean_BMI_Diab= 34.94 Mean_BMI_NonDiab= 30.93 
+T2: Cohen_d= 0.6892 
+T3: X2= 129.938 df= 1 p= 4.227366e-30 
+T3: Cramers_V= 0.4113 
+
+=== MODEL RESULTS ===
+                Model    AUC Accuracy
+1 Logistic Regression 0.8177   0.7516
+2       Decision Tree 0.7280   0.6405
+3       Random Forest 0.7762   0.7320
+  Sensitivity Specificity     F1
+1      0.5849        0.84 0.6200
+2      0.6792        0.62 0.5669
+3      0.5849        0.81 0.6019
+
+=== RF TUNED THRESHOLD 0.40 ===
+Sensitivity= 0.717 
+Specificity= 0.72 
+Accuracy= 0.719 
+F1= 0.6387 
+
+=== ODDS RATIOS ===
+             (Intercept) 
+                  0.0000 
+                 Glucose 
+                  1.0420 
+                     BMI 
+                  1.0436 
+                     Age 
+                  1.0006 
+             Pregnancies 
+                  1.1707 
+                 Insulin 
+                  0.9992 
+DiabetesPedigreeFunction 
+                  4.3190 
+           BloodPressure 
+                  0.9961 
+           SkinThickness 
+                  1.0108 
+       Glucose_BMI_Score 
+                  0.9970 
+            BMI_Category 
+                  1.9728 
+
+=== FEATURE IMPORTANCE ===
+                           Overall
+Glucose_BMI_Score        100.00000
+Glucose                   88.35809
+Age                       54.16611
+BMI                       51.34079
+DiabetesPedigreeFunction  47.94286
+Pregnancies               28.87092
+Insulin                   23.04965
+BloodPressure             21.62747
+SkinThickness             20.09985
+BMI_Category               0.00000
+                                          Feature
+Glucose_BMI_Score               Glucose_BMI_Score
+Glucose                                   Glucose
+Age                                           Age
+BMI                                           BMI
+DiabetesPedigreeFunction DiabetesPedigreeFunction
+Pregnancies                           Pregnancies
+Insulin                                   Insulin
+BloodPressure                       BloodPressure
+SkinThickness                       SkinThickness
+BMI_Category                         BMI_Category

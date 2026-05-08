@@ -19,19 +19,19 @@ The analysis covers problem framing, data wrangling, exploratory data analysis, 
 ## Repository Structure
 
 ```
-├── diabetes_analysis.R        # Complete R script — runs end to end
-├── diabetes_raw.csv           # Original dataset (768 rows, 9 columns)
-├── diabetes_cleaned.csv       # Cleaned dataset with 3 engineered features
-├── diabetes_report_FINAL.docx # Full academic report (15 pages)
-├── plots/
-│   ├── plot1_histograms.png
-│   ├── plot2_boxplots.png
-│   ├── plot3_class_dist.png
-│   ├── plot4_scatter.png
-│   ├── plot5_age_density.png
-│   ├── plot6_correlation.png
-│   ├── plot7_roc.png
-│   └── plot8_importance.png
+├── diabetes_analysis.R           # Complete R script — runs end to end
+├── diabetes.csv                  # Original dataset (768 rows, 9 columns)
+├── diabetes_cleaned.csv          # Cleaned dataset with 3 engineered features
+├── diabetes_report_121063.pdf    # Full academic report (15 pages)
+├── plot1_histograms.png
+├── plot2_boxplots.png
+├── plot3_class_dist.png
+├── plot4_scatter.png
+├── plot5_age_density.png
+├── plot6_correlation.png
+├── plot7_roc.png
+├── plot8_importance.png
+├── real_results.txt              # All computed statistics output
 └── README.md
 ```
 
